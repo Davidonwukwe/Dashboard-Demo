@@ -7,7 +7,7 @@ const BarChartsContainer = styled.div`
   background: #990D81;
   border-radius: 12px;
   .echarts-for-react {
-    padding: 50px;
+    padding: 10px;
   }
   .details {
     * {
@@ -31,12 +31,22 @@ const BarChart = () => {
         xAxis: {
             type: 'category',
             data: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
-            boundaryGap: false
+            boundaryGap: false,
+            axisLabel: {
+                textStyle: {
+                    color: 'white'
+                }
+            },
 
         },
         yAxis: {
             type: 'value',
             splitNumber: 5,
+            axisLabel: {
+                textStyle: {
+                    color: 'white'
+                }
+            },
             splitLine: {
                 lineStyle: {
                     color: 'rgba(255, 255, 255, 0.2)',
@@ -49,7 +59,9 @@ const BarChart = () => {
             {
                 data: [900, 700, 500, 1000, 70, 800],
                 type: 'bar',
-                barMaxWidth: 10,
+                barMaxWidth: 5,
+                barGap: '0%',
+                barCategoryGap: '0%',
                 itemStyle: {color: 'white'}
             }
         ]
