@@ -136,7 +136,7 @@ const StatisticsCards = () => {
                                       </svg>
                                   )}
                                   <span className={'growth'}>{stat.percentage}%    </span>
-                                  <span className={'lastMonth pl-3'}>Last month</span>
+                                  <span className={'lastMonth ps-1'}>Last month</span>
                               </div>
                           </div>
                       </div>

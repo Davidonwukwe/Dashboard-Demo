@@ -2,8 +2,10 @@ import styled from "styled-components";
 import NavBar from "./NavBar";
 import StatisticsCards from "./StatisticsCards";
 import RecentRequests from "./RecentRequests";
-import Chart from "../assets/images/Chart.png"
+import ChartImage from "../assets/images/Chart.png"
 import barChart from "../assets/images/chart (1).png"
+import Chart from "./Chart";
+import BarChart from "./BarChart";
 
 const Main = styled.div`
       width: 100%;
@@ -40,12 +42,18 @@ const Dashboard = () => {
             <div className={'content mx-3 my-4'}>
                 <StatisticsCards />
                 <div className={'charts d-flex justify-content-between flex-wrap mt-3'}>
-                    <div class={'chartImage mb-2'}>
-                        <img src={Chart} alt=""/>
-                    </div>
-                    <div className={'barchartImage mb-2'}>
-                        <img src={barChart} alt=""/>
-                    </div>
+                    <Chart />
+                    <BarChart />
+
+                    {/*<div class={'chartImage mb-2'}>*/}
+                    {/*    <img src={ChartImage} alt=""/>*/}
+                    {/*</div>*/}
+                    {/*<div className={'barchartImage mb-2'}>*/}
+                    {/*    <img src={barChart} alt=""/>*/}
+                    {/*</div>*/}
+                </div>
+
+                <div>
                 </div>
 
                 <RecentRequests />
