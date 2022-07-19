@@ -43,7 +43,11 @@ const Side = styled.div`
           width: 32px;
           height: 25px;
         }
+        .profile-card {
+          display: none !important;
+        }
       }
+      
     `
 const SideBar = () => {
     return (
@@ -55,7 +59,7 @@ const SideBar = () => {
             </div>
             <hr className="endLine"/>
             <SideBarLinks />
-            <div className={'profile-card d-flex position-absolute'}>
+            <div className={'profile-card p-3 d-flex align-items-center position-absolute'}>
                 <div className={'mr-3'}>
                     <img src={ProfilePic} alt=""/>
                 </div>

@@ -19,9 +19,17 @@ const Main = styled.div`
         height: 100%;
       }
     }
+  .content {
+    margin-top: 100px;
+  }
   @media screen and (min-width: 1872px ) {
     .charts {
       width: 75%;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .content {
+      margin-top: 120px;
     }
   }
     `

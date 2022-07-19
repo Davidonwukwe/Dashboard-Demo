@@ -5,6 +5,10 @@ import profilePicture from "../assets/icons/profilePicture.png"
 import {useState} from "react";
 
 const NavBarContainer = styled.div`
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  
   .nav-bar {
     height: 80px;
     background: #FFFFFF;
