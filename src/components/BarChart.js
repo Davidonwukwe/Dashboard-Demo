@@ -67,7 +67,7 @@ const BarChart = () => {
         ]
     };
 
-    return (<BarChartsContainer class={'px-3'}>
+    return (<BarChartsContainer className={'px-1 mt-md-3'}>
         <ReactEcharts option={option} />
         <div className={'details p-3'}>
             <p className={'mb-0 title'}>New users</p>
