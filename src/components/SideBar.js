@@ -8,6 +8,9 @@ const Side = styled.div`
       min-width: 200px;
       max-width: 253px;
       background-color: #990D81;
+      position: sticky;
+      top: 0;
+      height: 100vh;
       .logo {
         width: 65px;
         height: 51px;
@@ -51,7 +54,7 @@ const Side = styled.div`
     `
 const SideBar = () => {
     return (
-        <Side className="px-3 position-relative">
+        <Side className="px-3">
             <div className="d-flex justify-content-center mt-4">
                 <div className="logo">
                     <img src={CompanyLogo} alt="logo"/>
