@@ -108,5 +108,16 @@ const LinksContainer = styled.div`
       height: 100%;
     }
   }
+  @media screen and (max-width: 500px) {
+    .linkText {
+      display: none;
+    }
+    .link {
+      width: 52px;
+    }
+    .dropdownIcon {
+      display: none;
+    }
+  }
 `
 export default SideBarLinks;

@@ -19,8 +19,10 @@ const Main = styled.div`
         height: 100%;
       }
     }
-  @media screen and (max-width: 1405px) {
-    
+  @media screen and (min-width: 1872px ) {
+    .charts {
+      width: 75%;
+    }
   }
     `
 const Dashboard = () => {
@@ -29,7 +31,7 @@ const Dashboard = () => {
             <NavBar />
             <div className={'content mx-3 my-4'}>
                 <StatisticsCards />
-                <div className={'d-flex justify-content-between flex-wrap mt-3'}>
+                <div className={'charts d-flex justify-content-between flex-wrap mt-3'}>
                     <div class={'chartImage mb-2'}>
                         <img src={Chart} alt=""/>
                     </div>
