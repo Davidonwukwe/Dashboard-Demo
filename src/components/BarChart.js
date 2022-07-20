@@ -28,9 +28,11 @@ const BarChartsContainer = styled.div`
 
 const BarChart = () => {
     const option = {
+        responsive: true,
+        maintainAspectRatio: false,
         xAxis: {
             type: 'category',
-            data: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+            data: ['', 'Jan', 'Feb', 'Mar', 'Apr', 'May'],
             boundaryGap: false,
             axisLabel: {
                 textStyle: {
@@ -45,7 +47,8 @@ const BarChart = () => {
             axisLabel: {
                 textStyle: {
                     color: 'white'
-                }
+                },
+                padding: [0, -12, 0, -12]
             },
             splitLine: {
                 lineStyle: {
@@ -57,7 +60,7 @@ const BarChart = () => {
         },
         series: [
             {
-                data: [900, 700, 500, 1000, 70, 800],
+                data: [0, 900, 700, 500, 1000, 70, 800],
                 type: 'bar',
                 barMaxWidth: 5,
                 barGap: '0%',
