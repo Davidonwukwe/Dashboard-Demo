@@ -39,7 +39,7 @@ const Dashboard = () => {
     return (
         <Main>
             <NavBar />
-            <div className={'content mx-3 my-4'}>
+            <div className={'content mx-3 my-1'}>
                 <StatisticsCards />
                 <div className={'charts d-flex justify-content-between flex-wrap mt-3'}>
                     <Chart />

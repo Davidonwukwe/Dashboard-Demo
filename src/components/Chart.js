@@ -98,7 +98,7 @@ const Chart = () => {
     };
 
     return (
-        <ChartContainer>
+        <ChartContainer className={'my-2'}>
             <div className={'d-flex justify-content-between flex-wrap px-md-5 px-3 pt-3'}>
                 <div className={'text-nowrap mb-sm-3'}>
                     <h3 className={'title mb-0'}>User Inflow Statistics</h3>
