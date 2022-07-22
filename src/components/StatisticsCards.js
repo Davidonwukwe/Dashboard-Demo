@@ -7,8 +7,7 @@ import totalUsersCircle from '../assets/icons/totalUsersCircle.png'
 
 const StatisticsCardContainer =  styled.div`
   .card {
-    width: 270px;
-    max-width: 270px;
+    min-width: 270px;
     height: 123px;
     background: #FFFFFF;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.06);
@@ -62,8 +61,16 @@ const StatisticsCardContainer =  styled.div`
       color: #FFB648;
     }
   }
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 1340px) {
+    .card {
+      width: 48%;
+    }
+  }
+  @media screen and (max-width: 695px) {
       justify-content: center !important;
+    .card {
+      width: 100%;
+    }
   }
   @media screen and (min-width: 1872px ) {
     width: 75%;
@@ -113,12 +120,12 @@ const StatisticsCards = () => {
           {
               statistics.map((stat, index) =>
 
-                  (<div key={index} className={'card p-3 mb-2'}>
-                      <div className={'d-flex'}>
+                  (<div key={index} className={'card py-3 px-4 mb-2'}>
+                      <div className={'d-flex justify-content-between'}>
                           <div className={'statIcon'}>
                               <img src={stat.icon} alt=""/>
                           </div>
-                          <div className={'mx-2 text-nowrap'}>
+                          <div className={'text-nowrap'}>
                               <h3 className={'statValue mb-0'}>{numberWithSpaces(stat.value)}</h3>
                               <p className={'statName'}>{stat.name}</p>
                               <div className={stat.growth}>

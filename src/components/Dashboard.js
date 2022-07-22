@@ -44,13 +44,6 @@ const Dashboard = () => {
                 <div className={'charts d-flex justify-content-between flex-wrap mt-3'}>
                     <Chart />
                     <BarChart />
-
-                    {/*<div class={'chartImage mb-2'}>*/}
-                    {/*    <img src={ChartImage} alt=""/>*/}
-                    {/*</div>*/}
-                    {/*<div className={'barchartImage mb-2'}>*/}
-                    {/*    <img src={barChart} alt=""/>*/}
-                    {/*</div>*/}
                 </div>
 
                 <div>
