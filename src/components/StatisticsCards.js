@@ -72,9 +72,6 @@ const StatisticsCardContainer =  styled.div`
       width: 100%;
     }
   }
-  @media screen and (min-width: 1872px ) {
-    width: 75%;
-  }
 `;
 const numberWithSpaces = (x) => {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
